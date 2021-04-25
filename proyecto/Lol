@@ -1,0 +1,24 @@
+# Importamos la biblioteca de Hash
+import hashlib
+# El password es: santiago
+dbu =["Hexagono","Setsy"]
+dbp =["a7151dfceb910210ed3f6face979911b97163e96cfba40e31de2660682026c3f", "a7151dfceb910210ed3f6face979911b97163e96cfba40e31de2660682026c3f"]
+
+usuario = input("Escribe tu usuario: ")
+password = input("Escribe tu password: ")
+cifrado = hashlib.sha3_256(password.encode())
+print(cifrado.hexdigest())
+#print("Password: ", password)
+#print("Cifado: ", cifrado.hexdigest())
+#print("a: ", hashlib.sha3_256("a".encode()).hexdigest())
+#print("A: ", hashlib.sha3_256("A".encode()).hexdigest())
+
+
+if usuario in dbu:
+    posicion = dbu.index(usuario)
+    if cifrado.hexdigest() == dbp[posicion]:
+        print("Login existoso")
+    else:
+        print("Usuario o Password Incorrectos")
+else:
+    print("Usuario o Password Incorrectos")
