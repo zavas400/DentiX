@@ -1,5 +1,6 @@
-Nombre,Belinda Raya,Sarahi Cuenca,Omar Carrero,Martin Velazquez,Israel Catalan,Roxana Prada,Blanca Carro,Vera Vilar,Yanira Garcia,Juan Herrero,Francisco Garcia,Gustavo Ibanez,Francesca Salas,Tomas Tamayo,Itziar Valenzuela,Lorenza Pazos
-RFC,si,no ,si,no ,si,no ,si,no ,si,no ,si,no ,si,no ,si,no 
-Cedula,4210509,5170847,3494634,8753334,6572665,7414568,8175694,1366395,2687489,3308259,7191610,9983207,5617972,2291743,7974718,6841270
-telefono personal,3222291333,3222728713,3221845980,322,322,322,322,322,322,322,322,322,322,322,322,322
-telefono de consultorio,3223334651,3224585441,3225233129,322,322,322,322,322,322,322,322,322,322,322,322,322
+Nombre:,Belinda Raya,Sarahi Cuenca,Omar Carrero,Martin Velazquez,Israel Catalan,Roxana Prada,Blanca Carro,Vera Vilar,Yanira Garcia,Juan Herrero,Francisco Garcia,Gustavo Ibanez,Francesca Salas,Tomas Tamayo,Itziar Valenzuela,Lorenza Pazos,Amparo Menendez,Samuel Raya,Marino Campo,Sebastian Osorio
+RFC:,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Cedula:,4210509,5170847,3494634,8753334,6572665,7414568,8175694,1366395,2687489,3308259,7191610,9983207,5617972,2291743,7974718,6841270,6572445,7414539,4278509,8757774
+Telefono personal:,3222291333,3222728713,3221845980,3223936264,3223720823,3228833392,3221387010,3223694420,3224161333,3222420014,3227951328,3225512986,3223496017,3224275230,3224846204,3222184578,3227976849,3222291955,3228045388,3221412311
+Telefono del consultorio:,3223334651,3224585441,3225233129,3227599167,3221412311,3225705198,3223684400,3227976849,3227181162,3228045388,3221569173,3222291955,3229550007,3222282183,3225535817,3229791798,3225705198,3224161333,3225512986,3225535817
+Correo electronico: ,belinda@gmail.com,sara42@hotmail.com,omar27@gmail.com,doctor_martin@hotmail.com,i_catalan@gmail.com,proxx9@hotmail.com,blanca_1974@gmail.com,vera_vilar@hotmail.com,yani_233@gmail.com,juan_medico@hotmail.com,francisco_garcia@gmail.com,gustavo813@hotmail.com,frann_1985@gmail.com,tomas180@hotmail.com,itziar_valenzuela@gmail.com,lore_pazos@hotmail.com,amparo68@gmail.com,samuel1968@hotmail.com,marino45@gmail.com,sebas_osorio43@hotmail.com

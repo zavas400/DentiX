@@ -4,18 +4,6 @@ import csv
 direct ="lista.csv"
 
 
-
-def directorio():
-    archivo = open(direct,"r")
-    lector = csv.reader(archivo)
-    for fila in lector:
-        print("{:<23s}{:<20s}{:<20s}{:<20s}{:<20s}".format("1.-" + fila[1], "2.-" + fila[2], "3.-" + fila[3], "4.-" + fila[4], "5.-" + fila[5]))
-        print("{:<23s}{:<20s}{:<20s}{:<20s}{:<20s}".format("6.-" + fila[6],"7.-" +fila[7], "8.-" + fila[8], "9.-" + fila[9],"10.-" + fila[10]))
-        print("{:<23s}{:<20s}{:<20s}{:<20s}{:<20s}".format("11.-" + fila[11], "12.-" +fila[12], "13.-" + fila[13], "14.-" + fila[14], "15.-" + fila[15]))
-        print("{:<23s}".format("16.-" + fila[16]))
-        break
-    archivo.close()
-
 # esta función me imprime los datos del dentista
 def datos(seleccion):
     archivo = open(direct,"r")
@@ -26,33 +14,23 @@ def datos(seleccion):
         if seleccion >= longitud:
             print("Ese dentista no existe")
             break
-        if contador == 0:
-           print("Nombre:", fila[seleccion])
-        elif contador == 1:
-           print("RFC:", fila[seleccion])
-        elif contador == 2:
-           print("Cédula federal:", fila[seleccion])
-        elif contador == 3:
-           print("Teléfono personal:", fila[seleccion])
-        elif contador == 4:
-           print("Teléfono del consultorio:", fila[seleccion])
-           break
-        contador = contador +1
+        print(fila[0], fila[seleccion])
     archivo.close()
 
-def directory():
+def directorio():
     archivo = open(direct,"r")
     lector = csv.reader(archivo)
+    print("----------Directorio----------")
     for fila in lector:
         Num = (len(fila) -1)
         mas_cinco = 0
-        while mas_cinco != Num:
+        while mas_cinco < Num:
             primero = str(mas_cinco + 1)
             segundo = str(mas_cinco + 2)
             tercero = str(mas_cinco + 3)
             cuarto = str(mas_cinco + 4)
             quinto = str(mas_cinco + 5)
-            print("{:<23s}{:<20s}{:<20s}{:<20s}{:<20s}".format(primero + ".-" + fila[1 + mas_cinco], fila[2+ mas_cinco], fila[3 + mas_cinco], fila[4 + mas_cinco], fila[5 + mas_cinco]))
+            print("{:<23s}{:<20s}{:<20s}{:<20s}{:<20s}".format(primero + ".-" + fila[1 + mas_cinco], segundo + ".-" + fila[2+ mas_cinco], tercero + ".-" +  fila[3 + mas_cinco], cuarto + ".-" +  fila[4 + mas_cinco], quinto + ".-" +  fila[5 + mas_cinco]))
             mas_cinco = mas_cinco + 5
         break
     archivo.close()
