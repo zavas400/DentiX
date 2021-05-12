@@ -20,5 +20,8 @@ if usuario in dbu:
         print("Login existoso")
     else:
         print("Usuario o Password Incorrectos")
+        exit()
 else:
     print("Usuario o Password Incorrectos")
+    exit()
+
