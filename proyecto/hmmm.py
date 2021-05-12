@@ -3,7 +3,7 @@ import oh
 continuar = 1
 
 while continuar == 1:
-      oh.directorio()
+      oh.directory()
       seleccion = int(input("Escribe el número de dentista que quieres consultar: "))
       print()
       oh.datos(seleccion)

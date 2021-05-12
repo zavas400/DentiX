@@ -39,3 +39,20 @@ def datos(seleccion):
            break
         contador = contador +1
     archivo.close()
+
+def directory():
+    archivo = open(direct,"r")
+    lector = csv.reader(archivo)
+    for fila in lector:
+        Num = (len(fila) -1)
+        mas_cinco = 0
+        while mas_cinco != Num:
+            primero = str(mas_cinco + 1)
+            segundo = str(mas_cinco + 2)
+            tercero = str(mas_cinco + 3)
+            cuarto = str(mas_cinco + 4)
+            quinto = str(mas_cinco + 5)
+            print("{:<23s}{:<20s}{:<20s}{:<20s}{:<20s}".format(primero + ".-" + fila[1 + mas_cinco], fila[2+ mas_cinco], fila[3 + mas_cinco], fila[4 + mas_cinco], fila[5 + mas_cinco]))
+            mas_cinco = mas_cinco + 5
+        break
+    archivo.close()
