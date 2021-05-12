@@ -16,6 +16,7 @@ def directorio():
         break
     archivo.close()
 
+# esta función me imprime los datos del dentista
 def datos(seleccion):
     archivo = open(direct,"r")
     lector = csv.reader(archivo)
