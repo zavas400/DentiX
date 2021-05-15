@@ -38,4 +38,3 @@ while continuar == 1:
       continuar = int(input("¿Deseas consultar otro dentista? 1= sí, 2= no "))
 
 print("Gracias por usar el programa")
-

@@ -1,7 +1,6 @@
 import hashlib
 # Usuario y contraseñas
 
-
 # ciframos contraseña
 def pedir_con():
     contrasena = input("Escribe tu password: ")
