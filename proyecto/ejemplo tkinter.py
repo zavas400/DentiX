@@ -1,5 +1,7 @@
 from tkinter import *
 
+import contraseñas as cn
+
 # creamos la ventana
 ventana = Tk()
 ventana.title("DentiX")
@@ -20,10 +22,12 @@ etiqueta_contra.grid(column=0, row=2)
 entrada_contra = Entry()
 entrada_contra.grid(column=1, row=2)
 
+usuario = str(entrada_usuario.get())
+contrasena = str(entrada_contra.get())
 
 
 
-boton1 = Button(text="Ingresar")
+boton1 = Button(text="Ingresar" , command= cn.nueva())
 boton1.grid(column=3, row=3)
 
 
