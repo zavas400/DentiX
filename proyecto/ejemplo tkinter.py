@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter1 import *
 
 # creamos la ventana
 ventana = .Tk()
@@ -14,7 +14,7 @@ etiqueta_usuario.grid(column=0, row=1)
 entrada_usuario = .Entry()
 entrada_usuario.grid(column=1, row=1)
 
-etiqueta_contra = .Label(text="Contraseña:")
+etiqueta_contra = Label(text="Contraseña:")
 etiqueta_contra.grid(column=0, row=2)
 
 entrada_contra = .Entry()

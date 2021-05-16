@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter1 import *
 
 # creamos la ventana
 ventana = .Tk()
