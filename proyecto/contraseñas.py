@@ -24,7 +24,7 @@ def comprobar(usuario, dbu, cifrado, dbp):
             print("Usuario o Password Incorrectos")
             exit()
     else:
-        print("Usuario  Incorrectos")
+        print("Usuario o Password Incorrectos")
         exit()
 
 
