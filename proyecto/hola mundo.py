@@ -1,3 +1,3 @@
-from tkinter1 import *
+from tkinter import *
 mainwin = Tk()
 mainwin.mainloop()
