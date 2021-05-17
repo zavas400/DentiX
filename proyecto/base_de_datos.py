@@ -3,34 +3,86 @@ import csv
 # Nombre del archivo para abrir
 direct ="lista.csv"
 
-
-# esta función me imprime los datos del dentista
-def datos(salida, seleccion):
-    archivo = open(direct,"r")
-    lector = csv.reader(archivo)
-    if salida == 1:
-        for fila in lector:
-            print(fila[0], fila[seleccion])
-    archivo.close()
-
-def datoss(salida, seleccion):
+def conseguir_nombre (salida, seleccion):
     archivo = open(direct, "r")
     lector = csv.reader(archivo)
+    contador = 0
     if salida == 1:
-        contador = 0
         for fila in lector:
             if contador == 0:
                 Nombre = fila[seleccion]
-            elif contador == 1:
+                break
+    archivo.close()
+    return Nombre
+
+def conseguir_rfc (salida, seleccion):
+    archivo = open(direct, "r")
+    lector = csv.reader(archivo)
+    contador = 0
+    if salida == 1:
+        for fila in lector:
+            if contador == 1:
                 RFC = fila[seleccion]
-            elif contador == 2:
-                Cedula_federal = fila[seleccion]
-            elif contador == 3:
+                break
+            else:
+                contador = contador +1
+    archivo.close()
+    return RFC
+
+def conseguir_cedula (salida, seleccion):
+    archivo = open(direct, "r")
+    lector = csv.reader(archivo)
+    contador = 0
+    if salida == 1:
+        for fila in lector:
+            if contador == 2:
+                cedula = fila[seleccion]
+                break
+            else:
+                contador = contador +1
+    archivo.close()
+    return cedula
+
+def conseguir_tel_personal (salida, seleccion):
+    archivo = open(direct, "r")
+    lector = csv.reader(archivo)
+    contador = 0
+    if salida == 1:
+        for fila in lector:
+            if contador == 3:
                 Telefono_personal = fila[seleccion]
-            elif contador == 4:
+                break
+            else:
+                contador = contador +1
+    archivo.close()
+    return Telefono_personal
+
+def conseguir_tel_consultorio (salida, seleccion):
+    archivo = open(direct, "r")
+    lector = csv.reader(archivo)
+    contador = 0
+    if salida == 1:
+        for fila in lector:
+            if contador == 4:
                 Telefono_consultorio = fila[seleccion]
                 break
-
-        contador = contador +1
+            else:
+                contador = contador +1
     archivo.close()
-    return Nombre, RFC, Cedula_federal
+    return Telefono_consultorio
+
+def conseguir_correo (salida, seleccion):
+    archivo = open(direct, "r")
+    lector = csv.reader(archivo)
+    contador = 0
+    if salida == 1:
+        for fila in lector:
+            if contador == 5:
+                Correo = fila[seleccion]
+                break
+            else:
+                contador = contador +1
+    archivo.close()
+    return Correo
+
+
