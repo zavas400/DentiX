@@ -17,7 +17,7 @@ def pedir_con(contrasena):
 def salida (salida):
     if salida == 2:
         tkinter1.openNewWindow(ventana)
-
+#mggm
 
 ventana = Tk()
 ventana.title("DentiX")
