@@ -1,5 +1,5 @@
 import oh as fd
-import contraseñas as cn
+import cn
 
 
 
