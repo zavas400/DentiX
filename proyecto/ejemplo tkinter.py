@@ -17,8 +17,9 @@ def pedir_con():
 
 
 def salida (salida):
-    if salida == 1:
-        exit()
+    if salida == 2:
+        continue
+
 # Creamos la ventana
 ventana = Tk()
 ventana.title("DentiX")
@@ -42,6 +43,7 @@ entrada_contra.grid(column=1, row=2)
 usuario_cifrado = pedir_usu()
 contrasena_cifrada = pedir_con()
 salidaa = int(cn.comprobar(usuario_cifrado, dbu, contrasena_cifrada, dbp ))
+
 boton1 = Button(text="Ingresar" , command = salida(salidaa))
 boton1.grid(column=3, row=3)
 
