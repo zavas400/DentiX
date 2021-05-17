@@ -1,6 +1,6 @@
 from tkinter1 import *
-
-# creamos la ventana
+import oh
+# Creamos la ventana
 ventana = Tk()
 ventana.title("DentiX")
 ventana.geometry("500x700")
